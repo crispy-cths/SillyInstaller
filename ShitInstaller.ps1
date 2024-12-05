@@ -40,8 +40,8 @@ if ($response -eq "y") {
 
     mkdir "$env:LOCALAPPDATA\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState\"
 
-    mkdir "$HOME\windots\.config\.glaze-wm"
-    cp "$HOME\windots\.config\.glaze-wm\config.yaml" "$HOME\.glaze-wm\config.yaml" -Force
+    mkdir "$HOME\.glaze-wm"
+    cp "$HOME\windots\.config\.glaze-wm\config.yaml" "$HOME\.glaze-wm\" -Force
     mkdir "$HOME\windots\.config\fastfetch" 
     cp "$HOME\windots\.config\fastfetch\config.jsonc" "$HOME\.config\fastfetch\config.jsonc" -Force
     mkdir "$HOME\windots\.config\fastfetch" 

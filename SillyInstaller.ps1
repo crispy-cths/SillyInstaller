@@ -7,7 +7,7 @@ if (Test-Path  "$HOME\scoop") {
     Write-Output "Scoop is now installed."
 }
 
-$response = Read-Host "Do you want to install all of the bullshit on this pc? (y/n)"
+$response = Read-Host "Do you want to install some silly bloatware? (y/n)"
 if ($response -eq "y") {
     scoop install git
     if (Test-Path "$HOME\windots") {
@@ -15,10 +15,10 @@ if ($response -eq "y") {
     } else {    
         git clone https://github.com/ashish0kumar/windots.git "$HOME\windots"
     }
-    if (Test-Path "$HOME\ShitInstaller") {
+    if (Test-Path "$HOME\SillyInstaller") {
         Write-Output "My terrible code is already installed :3"
     } else {    
-        git clone https://github.com/crispy-cths/ShitInstaller.git "$HOME\ShitInstaller"
+        git clone https://github.com/crispy-cths/SillyInstaller.git "$HOME\SillyInstaller"
     }
 
     scoop install btop
@@ -51,12 +51,12 @@ if ($response -eq "y") {
     cp "$HOME\windots\.config\flowlauncher\Settings.json" "$HOME\scoop\apps\flow-launcher\current\app-1.19.4\UserData\Settings" -Force
     
     mkdir "$env:LOCALAPPDATA\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState\"
-    cp "$HOME\ShitInstaller\settings.json" "$env:LOCALAPPDATA\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState\settings.json" -Force
+    cp "$HOME\SillyInstaller\settings.json" "$env:LOCALAPPDATA\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState\settings.json" -Force
 
     mkdir "$HOME\AppData\Roaming\FlowLauncher\Themes"
-    cp "$HOME\ShitInstaller\Catppuccin Mocha.xaml" "$HOME\AppData\Roaming\FlowLauncher\Themes\" -Force
-    Invoke-WebRequest -Uri "https://raw.githubusercontent.com/crispy-cths/ShitInstaller/main/Microsoft.PowerShell_profile.ps1" -OutFile "$HOME\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1"
-    Invoke-WebRequest -Uri "https://github.com/crispy-cths/ShitInstaller/blob/main/Catppuccin%20Mocha.xaml" -OutFile "$HOME\AppData\Roaming\FlowLauncher\Themes"
+    cp "$HOME\SillyInstaller\Catppuccin Mocha.xaml" "$HOME\AppData\Roaming\FlowLauncher\Themes\" -Force
+    Invoke-WebRequest -Uri "https://raw.githubusercontent.com/crispy-cths/SillyInstaller/main/Microsoft.PowerShell_profile.ps1" -OutFile "$HOME\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1"
+    Invoke-WebRequest -Uri "https://github.com/crispy-cths/SillyInstaller/blob/main/Catppuccin%20Mocha.xaml" -OutFile "$HOME\AppData\Roaming\FlowLauncher\Themes"
 
 
     #I love chatgpt code :3

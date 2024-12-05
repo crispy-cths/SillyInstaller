@@ -21,6 +21,7 @@ if ($response -eq "y") {
     scoop bucket add extras
     scoop bucket add nonportable
     scoop install files-np
+    scoop install Terminal-Icons
     scoop install windhawk
     scoop install glazewm
     scoop install altsnap
@@ -43,7 +44,6 @@ if ($response -eq "y") {
     cp "$HOME\windots\.config\ohmyposh\zen.toml" "$HOME\.config\ohmyposh\zen.toml" -Force
     mkdir "$HOME\scoop\apps\flow-launcher\current\app-1.19.4\UserData\Settings"
     cp "$HOME\windots\.config\flowlauncher\Settings.json" "$HOME\scoop\apps\flow-launcher\current\app-1.19.4\UserData\Settings" -Force
-    mkdir $PROFILE
     cp "$HOME\windots\.config\WindowsPowershell\Microsoft.Powershell_profile.ps1" $PROFILE -Force
     
     #I love chatgpt code :3

@@ -33,7 +33,6 @@ if ($response -eq "y") {
     winget install JanDeDobbeleer.OhMyPosh -s winget
 
     mkdir "$env:LOCALAPPDATA\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState\"
-    cp "$HOME\windots\.config\terminal\settings.json" "$env:LOCALAPPDATA\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState\settings.json" -Force
     mkdir "$HOME\windots\.config\.glaze-wm\config.yaml" "$HOME\.glzr\glazewm\"
     cp "$HOME\windots\.config\.glaze-wm\config.yaml" "$HOME\.glzr\glazewm\config.yaml" -Force
     mkdir "$HOME\windots\.config\fastfetch\config.jsonc" "$HOME\.config\fastfetch\"
@@ -43,9 +42,16 @@ if ($response -eq "y") {
     mkdir "$HOME\windots\.config\ohmyposh\zen.toml" "$HOME\.config\ohmyposh\zen.toml"
     cp "$HOME\windots\.config\ohmyposh\zen.toml" "$HOME\.config\ohmyposh\zen.toml" -Force
     mkdir "$HOME\scoop\apps\flow-launcher\current\app-1.19.4\UserData\Settings"
+    mkdir "$HOME\AppData\Roaming\FlowLauncher\Themes"
     cp "$HOME\windots\.config\flowlauncher\Settings.json" "$HOME\scoop\apps\flow-launcher\current\app-1.19.4\UserData\Settings" -Force
     cp "$HOME\windots\.config\WindowsPowershell\Microsoft.Powershell_profile.ps1" $PROFILE -Force
     
+    Invoke-WebRequest -Uri "https://raw.githubusercontent.com/crispy-cths/ShitInstaller/main/Microsoft.PowerShell_profile.ps1" -OutFile "$HOME\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1"
+    Invoke-WebRequest -Uri "https://github.com/crispy-cths/ShitInstaller/blob/main/settings.json" -OutFile "$env:LOCALAPPDATA\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState\settings.json"
+    Invoke-WebRequest -Uri "https://github.com/catppuccin/flow-launcher/blob/main/themes/Catppuccin%20Mocha.xaml" -OutFile "$HOME\AppData\Roaming\FlowLauncher\Themes"
+    cp "$HOME\windots\"
+
+
     #I love chatgpt code :3
     # Define the path to the JSON file
     $jsonFile = "$HOME\.config\fastfetch\config.jsonc"

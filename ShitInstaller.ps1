@@ -33,13 +33,13 @@ if ($response -eq "y") {
     winget install JanDeDobbeleer.OhMyPosh -s winget
 
     mkdir "$env:LOCALAPPDATA\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState\"
-    mkdir "$HOME\windots\.config\.glaze-wm\config.yaml" "$HOME\.glzr\glazewm\"
+    mkdir "$HOME\windots\.config\.glaze-wm"
     cp "$HOME\windots\.config\.glaze-wm\config.yaml" "$HOME\.glzr\glazewm\config.yaml" -Force
-    mkdir "$HOME\windots\.config\fastfetch\config.jsonc" "$HOME\.config\fastfetch\"
+    mkdir "$HOME\windots\.config\fastfetch" 
     cp "$HOME\windots\.config\fastfetch\config.jsonc" "$HOME\.config\fastfetch\config.jsonc" -Force
-    mkdir "$HOME\windots\.config\fastfetch\cat.txt" "$HOME\.config\fastfetch\cat.txt"
+    mkdir "$HOME\windots\.config\fastfetch" 
     cp "$HOME\windots\.config\fastfetch\cat.txt" "$HOME\.config\fastfetch\cat.txt" -Force
-    mkdir "$HOME\windots\.config\ohmyposh\zen.toml" "$HOME\.config\ohmyposh\zen.toml"
+    mkdir "$HOME\windots\.config\ohmyposh" 
     cp "$HOME\windots\.config\ohmyposh\zen.toml" "$HOME\.config\ohmyposh\zen.toml" -Force
     mkdir "$HOME\scoop\apps\flow-launcher\current\app-1.19.4\UserData\Settings"
     mkdir "$HOME\AppData\Roaming\FlowLauncher\Themes"

@@ -24,3 +24,8 @@ Stuff that it installs:
 
 It also configures them based of [this](https://github.com/ashish0kumar/windots) repository.
 I'm too lazy to figure out how to make this stuff myself :3
+
+
+To Do:
+* Change GlazeWM config
+* More testing >:(

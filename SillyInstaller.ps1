@@ -12,7 +12,7 @@ if (Test-Path  "$HOME\scoop") {
 #Base stuff
 scoop bucket add extras
 scoop bucket add nerd-fonts
-scoop bucked add nonportable
+scoop bucket add nonportable
 scoop install Terminal-Icons
 scoop install JetBrainsMono-NF
 

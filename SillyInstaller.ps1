@@ -180,7 +180,8 @@ $menuConfig = @{
         } catch {
             Write-Host "Directory Exists"
         }
-        wget "https://raw.githubusercontent.com/crispy-cths/SillyInstaller/refs/heads/main/Powershell/Microsoft.PowerShell_profile.ps1" -OutFile "$HOME\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1"
+        Remove-Item -Path "$PROFILE" -Force
+        wget "https://raw.githubusercontent.com/crispy-cths/SillyInstaller/refs/heads/main/Powershell/Microsoft.PowerShell_profile.ps1" -OutFile "$PROFILE"
     }
 
     "WindHawk" = {

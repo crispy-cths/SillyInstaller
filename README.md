@@ -1,4 +1,10 @@
 # SillyInstaller
+
+
+# TEMPORARILY WONT WORK BECUASE IDK HOW TO DO STUFF RIGHT
+
+
+
 Installs a bunch of silly stuff onto school PCs using scoop and winget. Might work. Dont trust it.
 
 

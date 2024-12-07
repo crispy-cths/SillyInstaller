@@ -133,7 +133,7 @@ bar:
     - type: "clock"
       # Documentation on formatting date/time string:
       # https://learn.microsoft.com/en-us/dotnet/standard/base-types/custom-date-and-time-format-strings
-      time_formatting: "HH:mm:ss"
+      time_formatting: "HH:mm"
       margin: "0 10px 0 0"
 
     - type: "text"
@@ -265,11 +265,11 @@ bar:
       font_size: 20
       margin: "0 0 0 -65px"
 
-    - type: "text"
-      text: "⏻"
-      left_click_command: exec shutdown /s /f /t 05
-      margin: "0 12px 0 10px"
-      font_size: "16px"
+    # - type: "text"
+    #   text: "⏻"
+    #   left_click_command: exec shutdown /s /f /t 05
+    #   margin: "0 12px 0 10px"
+    #   font_size: "16px"
 
 workspaces:
   - name: "1"

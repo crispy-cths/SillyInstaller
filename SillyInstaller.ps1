@@ -119,6 +119,7 @@ $menuConfig = @{
     "Shenanigans" = {
         scoop install btop
         scoop install fastfetch
+        scoop install altsnap
         fastfetch --gen-config
         try {
         mkdir "$HOME\.config\fastfetch"

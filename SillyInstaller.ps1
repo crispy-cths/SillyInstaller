@@ -10,6 +10,7 @@ if (Test-Path  "$HOME\scoop") {
 }
 
 #Base stuff
+scoop install git
 scoop bucket add extras
 scoop bucket add nerd-fonts
 scoop bucket add nonportable

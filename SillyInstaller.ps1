@@ -14,8 +14,7 @@ scoop install git
 scoop bucket add extras
 scoop bucket add nerd-fonts
 scoop bucket add nonportable
-scoop bucket add extras
-scoop install Terminal-Icons
+scoop install terminal-icons
 scoop install JetBrainsMono-NF
 
 
